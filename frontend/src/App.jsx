@@ -44,7 +44,7 @@ function App() {
       setCoins(data);
       setFilteredCoins(data);
     } catch (err) {
-      setError('Failed to load cryptocurrency data. Please try again later.');
+      setError('Failed to load currency data. Please try again later.');
       console.error('Error loading coins:', err);
     } finally {
       setLoading(false);
@@ -81,7 +81,7 @@ function App() {
         {loading && (
           <div className="loading-container">
             <div className="spinner"></div>
-            <p>Loading cryptocurrency data...</p>
+            <p>Loading currency data...</p>
           </div>
         )}
 

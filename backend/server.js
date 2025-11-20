@@ -55,7 +55,7 @@ app.get('/api/coins', async (req, res) => {
     console.error('Error message:', error.message);
     console.error('Error stack:', error.stack);
     res.status(500).json({ 
-      error: 'Failed to fetch cryptocurrency data',
+      error: 'Failed to fetch currency data',
       details: process.env.NODE_ENV === 'development' ? error.message : undefined
     });
   }

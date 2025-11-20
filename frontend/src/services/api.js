@@ -2,7 +2,7 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
 
 /**
- * Fetches cryptocurrency data from the backend API
+ * Fetches currency data from the backend API
  * @returns {Promise<Array>} Array of coin objects
  */
 export const fetchCoins = async () => {
