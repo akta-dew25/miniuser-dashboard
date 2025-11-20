@@ -1,0 +1,141 @@
+.coin-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.coin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coin-table thead {
+  background-color: var(--card-bg);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.coin-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.coin-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.coin-table tbody tr:hover {
+  background-color: var(--bg-color);
+}
+
+.coin-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.coin-table td {
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.coin-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.coin-logo-placeholder {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.coin-name {
+  font-weight: 500;
+}
+
+.coin-symbol {
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.coin-price {
+  font-weight: 600;
+}
+
+.coin-change {
+  font-weight: 600;
+}
+
+.coin-change.positive {
+  color: var(--positive-color);
+}
+
+.coin-change.negative {
+  color: var(--negative-color);
+}
+
+.coin-market-cap {
+  font-weight: 500;
+}
+
+.coin-table-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .coin-table {
+    font-size: 0.85rem;
+  }
+
+  .coin-table th,
+  .coin-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .coin-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .coin-logo-placeholder {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .coin-table th,
+  .coin-table td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .coin-table th {
+    font-size: 0.7rem;
+  }
+}
+
